@@ -187,7 +187,7 @@ function app.update() -- update per frame (same as love.update())
     end
 end
 function app.draw() -- draw some UI text and create the players and the ball (same as love.draw())
-    if gameover then app.graphics.print("\n\n\n"..text) text2 = "" return end
+    if gameover then app.graphics.print("\n\n\n"..text) return end
     player1:Player()
     app.graphics.print("Player 1 score: "..player1.score)
     player2:Player()
