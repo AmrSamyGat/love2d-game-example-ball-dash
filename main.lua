@@ -54,11 +54,11 @@ function getTouchedPart(self, ball)
     end
     if self.id == 1 then 
         if By+ball.r < Py or By+ball.r > Py+PLAYER_HEIGHT then
-            return 
+            return false
         end
     elseif self.id == 2 then 
         if By-ball.r < Py or By-ball.r > Py+PLAYER_HEIGHT then
-            return 
+            return false
         end
     end
     return deltaX/PLAYER_WIDTH
